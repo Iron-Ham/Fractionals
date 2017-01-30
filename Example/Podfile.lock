@@ -1,0 +1,16 @@
+PODS:
+  - Fractionals (0.1.0)
+
+DEPENDENCIES:
+  - Fractionals (from `../`)
+
+EXTERNAL SOURCES:
+  Fractionals:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Fractionals: 89a7d71ff501cc2d54e7d09ae62a16dc2bba989f
+
+PODFILE CHECKSUM: 8f7e693f5df1747449ce5cdcb47e480ffec07c0f
+
+COCOAPODS: 1.2.0.beta.1
