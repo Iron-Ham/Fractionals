@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Fractionals_Tests' do
+  pod 'Fractionals', :path => '../'
+  
+  
+end
