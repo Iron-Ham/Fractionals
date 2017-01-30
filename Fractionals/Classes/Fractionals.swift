@@ -71,9 +71,9 @@ private func fractify(targetValue: Double, z: Double, n: Double, d: Double, oldD
 
     // Stop condition
     guard z - floor(z) > acceptableError else { return Fractional(numerator: Int(n), denominator: Int(d)) }
-    let newZ = 1 / (z - floor(z)) ; print("newZ: \(newZ)")
-    let newD = d * floor(newZ) + oldD ; print("newD: \(newD)")
-    let newN = round(targetValue * newD); print("newN: \(newN)")
+    let newZ = 1 / (z - floor(z))
+    let newD = d * floor(newZ) + oldD
+    let newN = round(targetValue * newD)
     guard newD < valueCeiling, newN < valueCeiling else { return Fractional(numerator: Int(n), denominator: Int(d)) }
 
     return fractify(targetValue: targetValue, z: newZ, n: newN, d: newD, oldD: d)
